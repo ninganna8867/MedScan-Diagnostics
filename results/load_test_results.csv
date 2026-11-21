@@ -1,0 +1,11 @@
+request,status,latency_seconds,result
+2,SUCCESS,3.056,"{'label': 'Normal', 'confidences': [{'label': 'Normal', 'confidence': 0.7761518955230713}, {'label': 'COVID', 'confidence': 0.1426820307970047}, {'label': 'Viral Pneumonia', 'confidence': 0.08116597682237625}]}"
+1,SUCCESS,3.169,"{'label': 'Normal', 'confidences': [{'label': 'Normal', 'confidence': 0.7761518955230713}, {'label': 'COVID', 'confidence': 0.1426820307970047}, {'label': 'Viral Pneumonia', 'confidence': 0.08116597682237625}]}"
+3,SUCCESS,2.324,"{'label': 'Normal', 'confidences': [{'label': 'Normal', 'confidence': 0.7761518955230713}, {'label': 'COVID', 'confidence': 0.1426820307970047}, {'label': 'Viral Pneumonia', 'confidence': 0.08116597682237625}]}"
+4,SUCCESS,2.458,"{'label': 'Normal', 'confidences': [{'label': 'Normal', 'confidence': 0.7761518955230713}, {'label': 'COVID', 'confidence': 0.1426820307970047}, {'label': 'Viral Pneumonia', 'confidence': 0.08116597682237625}]}"
+5,SUCCESS,5.62,"{'label': 'Normal', 'confidences': [{'label': 'Normal', 'confidence': 0.7761518955230713}, {'label': 'COVID', 'confidence': 0.1426820307970047}, {'label': 'Viral Pneumonia', 'confidence': 0.08116597682237625}]}"
+6,SUCCESS,5.67,"{'label': 'Normal', 'confidences': [{'label': 'Normal', 'confidence': 0.7761518955230713}, {'label': 'COVID', 'confidence': 0.1426820307970047}, {'label': 'Viral Pneumonia', 'confidence': 0.08116597682237625}]}"
+7,SUCCESS,5.459,"{'label': 'Normal', 'confidences': [{'label': 'Normal', 'confidence': 0.7761518955230713}, {'label': 'COVID', 'confidence': 0.1426820307970047}, {'label': 'Viral Pneumonia', 'confidence': 0.08116597682237625}]}"
+8,SUCCESS,5.409,"{'label': 'Normal', 'confidences': [{'label': 'Normal', 'confidence': 0.7761518955230713}, {'label': 'COVID', 'confidence': 0.1426820307970047}, {'label': 'Viral Pneumonia', 'confidence': 0.08116597682237625}]}"
+9,SUCCESS,5.339,"{'label': 'Normal', 'confidences': [{'label': 'Normal', 'confidence': 0.7761518955230713}, {'label': 'COVID', 'confidence': 0.1426820307970047}, {'label': 'Viral Pneumonia', 'confidence': 0.08116597682237625}]}"
+10,SUCCESS,5.269,"{'label': 'Normal', 'confidences': [{'label': 'Normal', 'confidence': 0.7761518955230713}, {'label': 'COVID', 'confidence': 0.1426820307970047}, {'label': 'Viral Pneumonia', 'confidence': 0.08116597682237625}]}"
