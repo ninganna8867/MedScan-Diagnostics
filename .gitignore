@@ -28,3 +28,5 @@ data/processed/*
 # Operating system files
 .DS_Store
 Thumbs.db
+
+mlflow.db
