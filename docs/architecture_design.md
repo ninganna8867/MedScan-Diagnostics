@@ -4,17 +4,29 @@
 
 \## 1. Project Goal
 
-Classify chest X-ray images into:
+
+
+Develop a chest X-ray image classification system using deep learning.
+
+
+
+The selected dataset contains three classes:
+
+\- COVID
 
 \- Normal
 
-\- Pneumonia
+\- Viral Pneumonia
 
-\- COVID-19
+
+
+\*\*Note:\*\* Viral Pneumonia is the dataset's actual class name. It is not a generic Pneumonia category.
 
 
 
 \## 2. Model Architecture
+
+
 
 \- Architecture: ResNet-18
 
@@ -22,9 +34,9 @@ Classify chest X-ray images into:
 
 \- Pretrained weights: ImageNet
 
-\- Input image size: 224 x 224
+\- Input image size: 224 × 224
 
-\- Input channels: 3
+\- Input channels: 3 (RGB)
 
 \- Output classes: 3
 
@@ -32,63 +44,49 @@ Classify chest X-ray images into:
 
 \## 3. Classification Layer
 
-Replace the original ResNet-18 final fully connected
-
-layer with a new layer containing 3 output neurons.
 
 
+\- Replace the original ResNet-18 final fully connected layer.
 
-\## 4. Training Configuration
+\- Use a new fully connected layer with 3 output neurons.
 
-\- Loss Function: CrossEntropyLoss
+\- Each output represents one of the three dataset classes.
+
+
+
+\## 4. Baseline Training Configuration
+
+
+
+\- Loss function: CrossEntropyLoss
 
 \- Optimizer: Adam
 
-\- Evaluation: Validation and independent test sets
+\- Learning rate: 0.0001
+
+\- Batch size: 32
+
+\- Epochs: 5
+
+\- Training approach: Freeze the pretrained ResNet-18 backbone and train only the final fully connected layer.
+
+\- Model selection: Save the model with the best validation accuracy.
 
 
 
-\## 5. Evaluation Metrics
-
-\- Accuracy
-
-\- Precision
-
-\- Recall / Sensitivity
-
-\- Specificity
-
-\- ROC-AUC
-
-\- COVID-19 False Negative Rate
+\## 5. Dataset and Preprocessing
 
 
 
-\## 6. Explainability
+\- Total selected images: 3,000
 
-\- Technique: Grad-CAM
+\- Training set: 2,100 images
 
-\- Target layer: layer4\[-1]
+\- Validation set: 450 images
 
-\- Output: Heatmap over the input X-ray image
+\- Testing set: 450 images
 
+\- Image resizing: 224 × 224
 
-
-\## 7. Application
-
-\- Framework: Gradio
-
-\- Input: Uploaded chest X-ray
-
-\- Output: Predicted class, class probabilities and Grad-CAM heatmap
-
-
-
-\## 8. Important Considerations
-
-\- Avoid patient-level data leakage wherever patient IDs are available.
-
-\- Evaluate COVID-19 false negatives separately.
-
-\- The project is educational and not intended for medical diagnosis.
+\- Normalization: ImageNet mean and
 
